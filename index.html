@@ -23,7 +23,7 @@
         <p v-show="!isShown">What is the lucky number?</p>
         <h5 v-show="isShown">The lucky number is...</h5>
         <p class="lottery__result" v-show="isShown">{{ randomNumber }}</p>
-        <input type="button" class="btn" value="TAKE A CHANCE" @click="displayNumber()">
+        <button class="btn" @click="displayNumber()">TAKE A CHANCE</button>
         <div class="lottery__max">
             <h6>Max No.</h6>
             <input type="text" v-model="max">
